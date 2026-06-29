@@ -10,7 +10,7 @@ Small and easy to use camera system for GameMaker.
 ```gml
 camera = new GMCamera(_game_width, _game_height); //Change to desired values.
 camera.size(_width, _height);                     //Change to desired values.
-camera.target(_instance);                         //Change to desired target. Hover for more info.
+camera.target(_instance);                         //Change to desired target. Hover for info.
 camera.enable();
 ```
 - Add to end step event:
