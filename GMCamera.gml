@@ -64,6 +64,12 @@ function GMCamera(_game_width, _game_height) constructor {
 	* @param {bool} _bool The bool.
 	*/
 	static enable = function(_bool = true) {
+		
+		if !instance_exists(__cam.target) { 
+			show_debug_message($"Instance {__cam.target} does not exist!");
+			exit;
+		}
+		
 		if _bool {
 			var _x = __cam.target.x - __cam.width  * 0.5;
 			var _y = __cam.target.y - __cam.height * 0.5;
